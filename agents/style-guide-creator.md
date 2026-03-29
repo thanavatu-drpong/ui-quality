@@ -9,6 +9,7 @@ description: |
   the frontend-design skill's job. This agent only creates the style guide document and
   token files, not application code.
 model: sonnet
+color: green
 tools:
   - Write
   - Read

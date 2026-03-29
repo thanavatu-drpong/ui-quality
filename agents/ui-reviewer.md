@@ -3,6 +3,7 @@ name: ui-reviewer
 description: |
   Use this agent proactively after writing or significantly modifying frontend/UI code (HTML, CSS, JS, templates, or equivalent visual layer). Reviews visual composition, style guide compliance, and modern UI quality. Do not use for minor text changes, non-visual edits, or backend code. Do not use when the code-reviewer agent is more appropriate (logic, architecture, testing). This agent focuses exclusively on visual/UX quality.
 model: sonnet
+color: cyan
 tools:
   - Glob
   - Grep
