@@ -1,0 +1,20 @@
+{
+  "name": "ui-quality-marketplace",
+  "description": "UI/UX quality toolkit for Claude Code — style guide creator, visual reviewer, token compliance",
+  "owner": {
+    "name": "FCI Finance",
+    "email": "fpa@drpongofficial.com"
+  },
+  "plugins": [
+    {
+      "name": "ui-quality",
+      "description": "UI/UX quality toolkit — style guide creator, visual reviewer agent, and token compliance hook for frontend development",
+      "version": "2.0.0",
+      "source": "./",
+      "author": {
+        "name": "FCI Commercial Finance",
+        "email": "fpa@drpongofficial.com"
+      }
+    }
+  ]
+}
