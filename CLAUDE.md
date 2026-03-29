@@ -1,6 +1,25 @@
 # ui-quality Plugin
 
-This plugin provides a UI/UX quality reviewer agent that checks frontend code for visual composition, style guide compliance, and modern UI patterns.
+This plugin provides UI/UX quality tools for frontend development: a style guide creator, a visual quality reviewer, and a token compliance hook.
+
+## Agent: style-guide-creator
+
+Generates a complete style guide for new projects through an 8-question guided wizard. Designed for non-technical users — every question includes plain-language explanations and real-world examples.
+
+### When to use
+
+- Starting a new project that needs a style guide
+- When ui-reviewer reports no style guide found
+
+### What it produces
+
+- `style-guide/style-guide.md` — Complete design rules document
+- `style-guide/tokens.{ext}` — Token file matching your tech stack (CSS vars, JS module, etc.)
+- `.claude/rules/style-guide-enforcement.md` — Ensures Claude follows the guide automatically
+
+### Company palette
+
+Optionally uses the FCI/Dr.PONG brand palette (7 color groups with full shade ramps). Not compulsory — users can define their own colors.
 
 ## Agent: ui-reviewer
 
@@ -22,3 +41,16 @@ A style guide file must exist in the project for full review capability. The age
 ### Output
 
 Findings grouped as Must fix / Should fix / Suggest. The agent flags issues and waits for approval — it never makes changes itself.
+
+## Hook: token-lint
+
+PostToolUse hook that fires on every Write/Edit of frontend files (.html, .css, .js, .jsx, .tsx, .vue, .svelte). Warning only — never blocks.
+
+### What it checks
+
+- Hardcoded hex colors that should use CSS variables
+- Magic pixel values not on the spacing scale
+
+### Requirements
+
+Only active when `style-guide/style-guide.md` exists in the project. Silent otherwise.
