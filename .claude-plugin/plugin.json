@@ -1,0 +1,9 @@
+{
+  "name": "ui-quality",
+  "description": "UI/UX quality reviewer agent — reviews visual composition, style guide compliance, and modern UI patterns during frontend development",
+  "version": "1.0.0",
+  "author": {
+    "name": "FCI Commercial Finance",
+    "url": "https://github.com/thanavatu-drpong"
+  }
+}
