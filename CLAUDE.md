@@ -1,6 +1,6 @@
 # ui-quality Plugin
 
-This plugin provides UI/UX quality tools for frontend development: a style guide creator, a visual quality reviewer, and a token compliance hook.
+This plugin provides UI/UX quality tools for frontend development: a style guide creator and a visual quality reviewer.
 
 ## Agent: style-guide-creator
 
@@ -42,15 +42,3 @@ A style guide file must exist in the project for full review capability. The age
 
 Findings grouped as Must fix / Should fix / Suggest. The agent flags issues and waits for approval — it never makes changes itself.
 
-## Hook: token-lint
-
-PostToolUse hook that fires on every Write/Edit of frontend files (.html, .css, .js, .jsx, .tsx, .vue, .svelte). Warning only — never blocks.
-
-### What it checks
-
-- Hardcoded hex colors that should use CSS variables
-- Magic pixel values not on the spacing scale
-
-### Requirements
-
-Only active when `style-guide/style-guide.md` exists in the project. Silent otherwise.

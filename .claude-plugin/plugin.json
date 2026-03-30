@@ -1,7 +1,7 @@
 {
   "name": "ui-quality",
-  "description": "UI/UX quality toolkit — style guide creator, visual reviewer agent, and token compliance hook for frontend development",
-  "version": "2.0.0",
+  "description": "UI/UX quality toolkit — style guide creator and visual reviewer agent for frontend development",
+  "version": "2.1.0",
   "author": {
     "name": "FCI Commercial Finance",
     "url": "https://github.com/thanavatu-drpong"
